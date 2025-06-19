@@ -108,7 +108,7 @@ cat << 'EOF' > startup.sh
 #!/bin/bash
 
 # Everytime work from the directory of this script
-cd "$(classdir "$0")" || exit 1
+cd "$(dirname "$0")" || exit 1
 
 # Source for functions and config
 source ./config/config.env

@@ -13,4 +13,5 @@ configfile="${classdir}/config/config.env"
 sed -i "s/ASSIGNMENT=.*/ASSIGNMENT=\"${newassignment}\"/" "$configfile"
 
 #running the startup.sh
+
 "${classdir}/startup.sh"
